@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Image hover</title>
+    <style>
+        .main{
+            position: relative;
+            height: 300px;
+            width: 300px;
+        }
+        .image{
+            display: block;
+            width: 300px;
+            height: 300px;
+            transition: 1s;
+        }
+        .main-2{
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 0%;
+            right: 0%;
+            height: 100%;
+            opacity: 0;
+            transition: 1s;
+            background-image: linear-gradient(blue, red);
+        }
+        .main:hover .main-2{
+            opacity: 1;
+        }
+        .main:hover .image{
+            transform: rotate(360deg);
+        }
+        .main-3{
+            position: absolute;
+            text-align: center;
+            color: black;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+      <img src="https://www.thestatesman.com/wp-content/uploads/2019/01/Virat-Kohli-14.jpg" alt="" class="image">
+    <div class="main-2">
+        <div class="main-3">hello</div>
+    </div>
+    </div>
+
+
+   
+</body>
+</html>
