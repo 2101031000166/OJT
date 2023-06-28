@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and show div</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+
+        div{
+
+            height: 300px;
+            width: 300px;
+            background-color: red;
+        }
+    </style>
+    <script>
+
+        $(document).ready(function(){
+
+            $('#Hide').click(function(){ $('#container').hide()})
+        });
+
+        $(document).ready(function(){
+
+            $('#Show').click(function(){ $('#container').show()})
+        });
+    </script>
+</head>
+<body>
+    <div id="container"></div>
+    <hr>
+    <button id="Hide">Hide</button>
+    <button id="Show">Show</button>
+
+    
+</body>
+</html>
